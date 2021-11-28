@@ -31,7 +31,8 @@ COPY --from=builder /build/main /usr/local/bin
 USER root
 
 RUN apk --update --no-cache add \
-	mono
-    
+	mono \
+    --repository=http://dl-cdn.alpinelinux.org/alpine/edge/testing
+
 # Command to run when starting the container
 CMD ["main"]
