@@ -24,7 +24,7 @@ FROM arillso/ansible:2.12.0 as production
 
 COPY --from=choco usr/local/bin/choco.exe /usr/local/bin
 
-COPY --from=choco usr/local/bin/choco.exe /opt/chocolatey/
+COPY --from=choco  /opt/chocolatey /opt/chocolatey
 
 # Copy binary from build to main folder
 COPY --from=builder /build/main /usr/local/bin
