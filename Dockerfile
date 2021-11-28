@@ -30,5 +30,8 @@ COPY --from=builder /build/main /usr/local/bin
 # Run as root
 USER root
 
+RUN apk --update --no-cache add \
+	mono
+    
 # Command to run when starting the container
 CMD ["main"]
