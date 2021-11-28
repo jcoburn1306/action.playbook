@@ -32,7 +32,8 @@ USER root
 
 RUN apk --update --no-cache add \
 	mono \
-    --repository=http://dl-cdn.alpinelinux.org/alpine/edge/testing
+    --repository=http://dl-cdn.alpinelinux.org/alpine/edge/testing \
+    && mkdir -p /opt/chocolatey/lib
 
 # Command to run when starting the container
 CMD ["main"]
