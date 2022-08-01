@@ -5,6 +5,10 @@ and [human-readable changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## master
 
+### Fix
+
+- fix(deps): bump github.com/arillso/go.ansible from 0.0.1 to 0.0.2
+
 ## 0.0.5
 
 ### Changed
