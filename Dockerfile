@@ -17,7 +17,7 @@ RUN go mod download
 # Build the application
 RUN go build -o main
 
-FROM cytopia/ansible:2.15 as production
+#FROM cytopia/ansible:2.15 as production
 #FROM cytopia/ansible:latest as production
 
 RUN apk add py3-pip
